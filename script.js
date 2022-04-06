@@ -22,6 +22,9 @@ var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special ='!@#$%^&*()_-+={}[]|\:<>?,./';
 var numbers = '01234567890';
 var passwordlength;
+var checkUppercase;
+var checkNumbers;
+var checkSpecial;
 
 
 
