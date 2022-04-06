@@ -26,6 +26,12 @@ var checkUppercase;
 var checkNumbers;
 var checkSpecial;
 
+//Making a function that determines the length of the password 
+function determineLength(){
+    passwordlength = prompt('Please choose how many characters long youwould like your password to be (has to be between 8-128 characters):');
+
+    
+}
 
 
 
