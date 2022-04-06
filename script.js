@@ -30,7 +30,10 @@ var checkSpecial;
 function determineLength(){
     passwordlength = prompt('Please choose how many characters long youwould like your password to be (has to be between 8-128 characters):');
 
-    
+    if (passwordlength<8){
+        alert('The pass word lenght MUST be a number between 8-128 characters');
+        determineLength();
+    }
 }
 
 
