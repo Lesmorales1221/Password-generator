@@ -20,6 +20,7 @@ var generateBtn = document.querySelector('#generate');
 var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special ='!@#$%^&*()_-+={}[]|\:<>?,./';
+var numbers = '01234567890';
 
 
 
