@@ -21,6 +21,24 @@ var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special ='!@#$%^&*()_-+={}[]|\:<>?,./';
 var numbers = '01234567890';
+var passwordlength;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
