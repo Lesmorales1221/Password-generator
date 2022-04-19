@@ -33,7 +33,12 @@ function determineLength(){
     if (passwordlength<8){
         alert('The pass word lenght MUST be a number between 8-128 characters');
         determineLength();
-    }
+}else if (passwordlength>128){
+  alert('The password length MUST be a number between 8-128 characters');
+  determineLength();
+}else if (isNaN(passwordlength)){
+  alert('The password length MUST be a number between 8-128 characters');
+  determineLength();
 }
 
 
@@ -64,4 +69,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);}
