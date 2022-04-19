@@ -46,6 +46,8 @@ return passwordlength;
 }
 
 
+//Making a function that determines whether the user wants to include uppercase characters in the password
+
 
 
 
