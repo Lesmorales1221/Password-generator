@@ -54,6 +54,9 @@ function determineuppercase(){
   if (checkUppercase === null || checkUppercase === ""){
     alert('If you could please answer Yes or No');
     determineuppercase();
+  }else if (checkUppercase === "yes" || checkUppercase ==="y"){
+    checkUppercase = true;
+    return checkUppercase;
   }
 }
 
