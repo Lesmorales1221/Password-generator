@@ -40,14 +40,22 @@ function determineLength(){
   alert('The password length MUST be a number between 8-128 characters');
   determineLength();
 }else{
-  alert('The next screen will asky you what types of characters you would want to include for your password. If you choose to just keep lowercase letters be free to press No got all')
+  alert('The next screen will asky you what types of characters you would want to include for your password. /nIf you choose to just keep lowercase letters be free to press No got all')
 }
 return passwordlength;
 }
 
 
 //Making a function that determines whether the user wants to include uppercase characters in the password
+function determineuppercase(){
+  checkUppercase = prompt('Would you like to to include uppercase letters in your password? /n(Yes or No)');
+    checkUppercase = checkUppercase.toLowerCase();
 
+  if (checkUppercase === null || checkUppercase === ""){
+    alert('If you could please answer Yes or No');
+    determineuppercase();
+  }
+}
 
 
 
