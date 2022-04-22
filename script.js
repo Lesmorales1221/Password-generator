@@ -60,7 +60,11 @@ function determineuppercase(){
   }else if (checkUppercase === "no" || checkUppercase ==="n"){
     checkUppercase = false;
     return checkUppercase;
+  }else {
+    alert('If you could please answer Yes or No');
+    determineuppercase();
   }
+  return checkUppercase
 }
 
 
