@@ -68,8 +68,7 @@ function determineuppercase(){
 }
 
 
-
-
+//Making a function that determines whether the user wants to include numbers in the password
 
 
 
