@@ -57,6 +57,9 @@ function determineuppercase(){
   }else if (checkUppercase === "yes" || checkUppercase ==="y"){
     checkUppercase = true;
     return checkUppercase;
+  }else if (checkUppercase === "no" || checkUppercase ==="n"){
+    checkUppercase = false;
+    return checkUppercase;
   }
 }
 
