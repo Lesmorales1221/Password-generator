@@ -93,6 +93,18 @@ function determineNumbers(){
 }
 
 
+//Making a function that determines whether the user wants to include special characters in the password
+function determineSpecial(){
+  checkSpecial = prompt('Would you like to include special characters in your password? /n(Yes or No)');
+  checkSpecial = checkSpecial.toLowerCase();
+
+  if (checkSpecial === null || checkSpecial === ""){
+    alert('If you could please answer Yes or No');
+    determineSpecial();
+    
+  }
+}
+
 
 
 
