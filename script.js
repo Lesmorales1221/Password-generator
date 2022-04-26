@@ -76,9 +76,14 @@ function determineNumbers(){
   if (checkNumbers === null || checkNumbers === ""){
     alert('If you could please answer Yer or No');
     determineNumbers();
+
   }else if (checkNumbers === "yes" || checkNumbers ==="y"){
   checkNumbers = true;
   return checkNumbers;
+
+  }else if (checkNumbers === "no" || checkNumbers ==="n"){
+    checkNumbers = false;
+    return checkNumbers;
   }
 }
 
