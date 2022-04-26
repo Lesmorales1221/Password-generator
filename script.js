@@ -118,7 +118,8 @@ function determineSpecial(){
 }
 
 
-
+//These are the function that is used to take all the inpult from the previous functions and generate a password by using random number generator
+// The charAt method
 
 
 
