@@ -69,7 +69,10 @@ function determineuppercase(){
 
 
 //Making a function that determines whether the user wants to include numbers in the password
-
+function determinenumbers(){
+  checkNumbers = prompt('Would you like to include numbers in your pasword? /n(Yes or No)');
+  checkNumbers = checkNumbers.toLocaleLowerCase();
+}
 
 
 
