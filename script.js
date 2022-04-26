@@ -109,8 +109,12 @@ function determineSpecial(){
   }else if (checkSpecial === "no" || checkSpecial ==="n"){
   checkSpecial = false; 
   return checkSpecial;
-  
+
+  }else {
+    alert('If you could please answer Yes or No');
+    determineSpecial();
   }
+  return checkSpecial; 
 }
 
 
