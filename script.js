@@ -28,10 +28,10 @@ var checkSpecial;
 
 //Making a function that determines the length of the password 
 function determineLength(){
-    passwordLength = prompt('Please choose how many characters long youwould like your password to be (has to be between 8-128 characters):');
+    passwordLength = prompt('Please choose how many characters long you would like your password to be (has to be between 8-128 characters):');
 
     if (passwordLength<8){
-        alert('The pass word lenght MUST be a number between 8-128 characters');
+        alert('The password lenght MUST be a number between 8-128 characters');
         determineLength();
 }else if (passwordLength>128){
   alert('The password length MUST be a number between 8-128 characters');
@@ -40,7 +40,7 @@ function determineLength(){
   alert('The password length MUST be a number between 8-128 characters');
   determineLength();
 }else{
-  alert('The next screen will asky you what types of characters you would want to include for your password. /nIf you choose to just keep lowercase letters be free to press No got all')
+  alert('The next screen will ask you what types of characters you would want to include for your password. /nIf you choose to just keep lowercase letters be free to press No got all')
 }
 return passwordLength;
 }
@@ -74,7 +74,7 @@ function determineNumbers(){
   checkNumbers = checkNumbers.toLocaleLowerCase();
 
   if (checkNumbers === null || checkNumbers === ""){
-    alert('If you could please answer Yer or No');
+    alert('If you could please answer Yes or No');
     determineNumbers();
 
   }else if (checkNumbers === "yes" || checkNumbers ==="y"){
@@ -84,7 +84,12 @@ function determineNumbers(){
   }else if (checkNumbers === "no" || checkNumbers ==="n"){
     checkNumbers = false;
     return checkNumbers;
+
+  }else {
+    alert('If you could please answer Yes or No');
+    determineNumbers();
   }
+  return checkNumbers;
 }
 
 
