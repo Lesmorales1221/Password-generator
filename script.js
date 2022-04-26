@@ -105,7 +105,11 @@ function determineSpecial(){
   }else if (checkSpecial === "yes" || checkSpecial ==="y"){
     checkSpecial = true;
     return checkSpecial;
-    
+
+  }else if (checkSpecial === "no" || checkSpecial ==="n"){
+  checkSpecial = false; 
+  return checkSpecial;
+  
   }
 }
 
