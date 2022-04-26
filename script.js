@@ -101,6 +101,10 @@ function determineSpecial(){
   if (checkSpecial === null || checkSpecial === ""){
     alert('If you could please answer Yes or No');
     determineSpecial();
+
+  }else if (checkSpecial === "yes" || checkSpecial ==="y"){
+    checkSpecial = true;
+    return checkSpecial;
     
   }
 }
