@@ -72,6 +72,11 @@ function determineUppercase(){
 function determineNumbers(){
   checkNumbers = prompt('Would you like to include numbers in your pasword? /n(Yes or No)');
   checkNumbers = checkNumbers.toLocaleLowerCase();
+
+  if (checkNumbers === null || checkNumbers === ""){
+    alert('If you could please answer Yer or No');
+    determineNumbers();
+  }
 }
 
 
