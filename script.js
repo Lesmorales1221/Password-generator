@@ -21,39 +21,39 @@ var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special ='!@#$%^&*()_-+={}[]|\:<>?,./';
 var numbers = '01234567890';
-var passwordlength;
+var passwordLength;
 var checkUppercase;
 var checkNumbers;
 var checkSpecial;
 
 //Making a function that determines the length of the password 
 function determineLength(){
-    passwordlength = prompt('Please choose how many characters long youwould like your password to be (has to be between 8-128 characters):');
+    passwordLength = prompt('Please choose how many characters long youwould like your password to be (has to be between 8-128 characters):');
 
-    if (passwordlength<8){
+    if (passwordLength<8){
         alert('The pass word lenght MUST be a number between 8-128 characters');
         determineLength();
-}else if (passwordlength>128){
+}else if (passwordLength>128){
   alert('The password length MUST be a number between 8-128 characters');
   determineLength();
-}else if (isNaN(passwordlength)){
+}else if (isNaN(passwordLength)){
   alert('The password length MUST be a number between 8-128 characters');
   determineLength();
 }else{
   alert('The next screen will asky you what types of characters you would want to include for your password. /nIf you choose to just keep lowercase letters be free to press No got all')
 }
-return passwordlength;
+return passwordLength;
 }
 
 
 //Making a function that determines whether the user wants to include uppercase characters in the password
-function determineuppercase(){
+function determineUppercase(){
   checkUppercase = prompt('Would you like to to include uppercase letters in your password? /n(Yes or No)');
     checkUppercase = checkUppercase.toLowerCase();
 
   if (checkUppercase === null || checkUppercase === ""){
     alert('If you could please answer Yes or No');
-    determineuppercase();
+    determineUppercase();
   }else if (checkUppercase === "yes" || checkUppercase ==="y"){
     checkUppercase = true;
     return checkUppercase;
@@ -62,14 +62,14 @@ function determineuppercase(){
     return checkUppercase;
   }else {
     alert('If you could please answer Yes or No');
-    determineuppercase();
+    determineUppercase();
   }
   return checkUppercase
 }
 
 
 //Making a function that determines whether the user wants to include numbers in the password
-function determinenumbers(){
+function determineNumbers(){
   checkNumbers = prompt('Would you like to include numbers in your pasword? /n(Yes or No)');
   checkNumbers = checkNumbers.toLocaleLowerCase();
 }
