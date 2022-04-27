@@ -129,7 +129,7 @@ function generatePassword(){
   console.log(checkNumbers);
   determineSpecial();
   console.log(checkSpecial);
-}
+
 
 var character = lowercaseChar;
 var password = ""; 
@@ -158,18 +158,28 @@ if (checkUppercase && checkNumbers && checkSpecial){
   characters === lowercaseChar;
 }
 
+for(var i = 0; i < passwordLength; i++){
+  password += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return password; 
+}
+
 
 
 
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password1 = "";
+  var password1 = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
+
+//function resetText(){
+// document.getElementById("password").value = "Your Secure Password";
+// }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
