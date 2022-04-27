@@ -40,7 +40,7 @@ function determineLength(){
   alert('The password length MUST be a number between 8-128 characters');
   determineLength();
 }else{
-  alert('The next screen will ask you what types of characters you would want to include for your password. If you choose to just keep lowercase letters be free to press No got all')
+  alert('The next screen will ask you what types of characters you would want to include for your password. If you choose to just keep lowercase letters be free to press No')
 }
 return passwordLength;
 }
