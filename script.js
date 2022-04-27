@@ -40,7 +40,7 @@ function determineLength(){
   alert('The password length MUST be a number between 8-128 characters');
   determineLength();
 }else{
-  alert('The next screen will ask you what types of characters you would want to include for your password. /nIf you choose to just keep lowercase letters be free to press No got all')
+  alert('The next screen will ask you what types of characters you would want to include for your password. If you choose to just keep lowercase letters be free to press No got all')
 }
 return passwordLength;
 }
@@ -48,7 +48,7 @@ return passwordLength;
 
 //Making a function that determines whether the user wants to include uppercase characters in the password
 function determineUppercase(){
-  checkUppercase = prompt('Would you like to to include uppercase letters in your password? /n(Yes or No)');
+  checkUppercase = prompt('Would you like to to include uppercase letters in your password? (Yes or No)');
     checkUppercase = checkUppercase.toLowerCase();
 
   if (checkUppercase === null || checkUppercase === ""){
@@ -70,7 +70,7 @@ function determineUppercase(){
 
 //Making a function that determines whether the user wants to include numbers in the password
 function determineNumbers(){
-  checkNumbers = prompt('Would you like to include numbers in your pasword? /n(Yes or No)');
+  checkNumbers = prompt('Would you like to include numbers in your pasword? (Yes or No)');
   checkNumbers = checkNumbers.toLocaleLowerCase();
 
   if (checkNumbers === null || checkNumbers === ""){
@@ -95,7 +95,7 @@ function determineNumbers(){
 
 //Making a function that determines whether the user wants to include special characters in the password
 function determineSpecial(){
-  checkSpecial = prompt('Would you like to include special characters in your password? /n(Yes or No)');
+  checkSpecial = prompt('Would you like to include special characters in your password? (Yes or No)');
   checkSpecial = checkSpecial.toLowerCase();
 
   if (checkSpecial === null || checkSpecial === ""){
