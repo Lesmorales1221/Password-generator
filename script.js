@@ -134,8 +134,11 @@ function generatePassword(){
 var character = lowercaseChar;
 var password = ""; 
 if (checkUppercase && checkNumbers && checkSpecial){
-  characters += uppercaseChar + specialChar;
+  characters += uppercaseChar + numbersChar + specialChar;
 
+}else if (checkUppercase && checkNumbers){
+  characters += uppercaseChar + numbersChar;
+  
 }
 
 
