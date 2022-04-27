@@ -173,7 +173,7 @@ function writePassword() {
   var password1 = "";
   var password1 = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  passwordText.value = password1;
 
 }
 
