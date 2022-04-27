@@ -131,7 +131,12 @@ function generatePassword(){
   console.log(checkSpecial);
 }
 
+var character = lowercaseChar;
+var password = ""; 
+if (checkUppercase && checkNumbers && checkSpecial){
+  characters += uppercaseChar + specialChar;
 
+}
 
 
 
