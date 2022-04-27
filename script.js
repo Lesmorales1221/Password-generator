@@ -17,10 +17,10 @@
 
 // Assignment code here
 var generateBtn = document.querySelector('#generate');
-var lowercase = 'abcdefghijklmnopqrstuvwxyz';
-var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var special ='!@#$%^&*()_-+={}[]|\:<>?,./';
-var numbers = '01234567890';
+var lowercaseChar = 'abcdefghijklmnopqrstuvwxyz';
+var uppercaseChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var specialChar ='!@#$%^&*()_-+={}[]|\:<>?,./';
+var numbersChar = '01234567890';
 var passwordLength;
 var checkUppercase;
 var checkNumbers;
@@ -146,7 +146,7 @@ if (checkUppercase && checkNumbers && checkSpecial){
   characters += uppercaseChar + specialChar;
 
 }else if (checkUppercase){
-  characters += specialChar;
+  characters += uppercaseChar; 
 
 }else if (checkNumbers){
   characters += numbersChar;
@@ -173,7 +173,7 @@ function writePassword() {
   var password1 = "";
   var password1 = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password1;
+  passwordText.value = password1 ;
 
 }
 
