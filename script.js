@@ -138,7 +138,24 @@ if (checkUppercase && checkNumbers && checkSpecial){
 
 }else if (checkUppercase && checkNumbers){
   characters += uppercaseChar + numbersChar;
-  
+
+}else if (checkNumbers && checkSpecial){
+  characters += numbersChar + specialChar;
+
+}else if (checkUppercase && checkSpecial){
+  characters += uppercaseChar + specialChar;
+
+}else if (checkUppercase){
+  characters += specialChar;
+
+}else if (checkNumbers){
+  characters += numbersChar;
+
+}else if (checkSpecial){
+  characters += specialChar;
+
+}else{
+  characters === lowercaseChar;
 }
 
 
